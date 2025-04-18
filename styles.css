@@ -1,107 +1,79 @@
-/* styles.css */
-
-/* Fond dégradé violet */
 body {
-  background: linear-gradient(to bottom, #6a1b9a, #ab47bc);
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: white;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  padding: 30px 20px;
+  text-align: center; /* Centrer tout le contenu du body */
 }
 
-header {
-  text-align: center;
-  padding: 40px 0;
+h1 {
+  margin-bottom: 50px;
+  font-size: 2.5rem;
 }
 
-header h1 {
-  font-size: 3em;
-  margin: 0;
+.section {
+  margin-bottom: 60px;
 }
 
-header p {
-  font-size: 1.2em;
-  margin: 0;
-  font-style: italic;
-}
-
-main {
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 20px;
-  margin: 20px;
-}
-
-/* Sections */
-.menu-section {
-  margin-bottom: 40px;
-}
-
-.menu-section h2 {
-  font-size: 2em;
-  border-bottom: 2px solid #fff;
+.section h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  display: inline-block; /* Permet de placer les titres côte à côte */
+  margin-right: 10px;
+}
+
+.sub-title {
+  font-size: 1.4rem; /* Un peu plus petit que le titre principal */
+  font-weight: 300;
+  margin-top: 0;
 }
 
 .item {
   margin-bottom: 20px;
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
 }
 
-.item h3 {
-  font-size: 1.5em;
-  margin: 0;
+.item:hover {
+  transform: scale(1.02);
 }
 
-.item p {
-  margin: 5px 0;
+.item .title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 10px; /* Espacer le titre du prix */
 }
 
-.price {
-  font-weight: bold;
-  font-size: 1.2em;
-  color: #ffeb3b;
+.item .price {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-top: 10px; /* Espacer le prix du reste */
+  display: block; /* Afficher le prix sous le titre */
+  text-align: center; /* Assurer que le prix est centré */
 }
 
-/* Appel */
-.call-to-action {
+.call {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
-.call-button {
-  background-color: #ff5722;
-  color: white;
-  padding: 15px 30px;
-  font-size: 1.5em;
-  border: none;
-  border-radius: 5px;
+.call a {
+  color: #fff;
+  background-color: #8e2de2;
+  padding: 15px 25px;
+  border-radius: 25px;
   text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.call-button:hover {
-  background-color: #e64a19;
+.call a:hover {
+  background-color: #5d00a2;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2.5em;
-  }
-
-  header p {
-    font-size: 1em;
-  }
-
-  .item h3 {
-    font-size: 1.2em;
-  }
-
-  .price {
-    font-size: 1em;
-  }
-
-  .call-button {
-    font-size: 1.2em;
-  }
-}
