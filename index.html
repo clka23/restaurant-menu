@@ -16,10 +16,24 @@
       padding: 30px 20px;
     }
 
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
     h1 {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
       font-size: 2.5rem;
+    }
+
+    .sub-title {
+      font-size: 1.5rem;
+      margin-top: -20px;
+      margin-bottom: 50px;
+      font-style: italic;
+      color: #e0dfff;
     }
 
     .section {
@@ -77,35 +91,37 @@
   </style>
 </head>
 <body>
-  <h1 data-aos="fade-up">Menu du Restaurant</h1>
-  <h2 data-aos="fade-up">Menümüz</h2>
+  <div class="container">
+    <h1 data-aos="fade-up">Menu du Restaurant</h1>
+    <h2 data-aos="fade-up" class="sub-title">Menümüz</h2>
 
-  <div class="section" data-aos="fade-up">
-    <h2>Entrées</h2>
-    <div class="item" data-aos="fade-up"><span class="title">Salade Méditerranéenne</span> <span class="price">6€</span></div>
-    <div class="item" data-aos="fade-up"><span class="title">Soupe du jour</span> <span class="price">5€</span></div>
-  </div>
+    <div class="section" data-aos="fade-up">
+      <h2>Entrées</h2>
+      <div class="item" data-aos="fade-up"><span class="title">Salade Méditerranéenne</span> <span class="price">6€</span></div>
+      <div class="item" data-aos="fade-up"><span class="title">Soupe du jour</span> <span class="price">5€</span></div>
+    </div>
 
-  <div class="section" data-aos="fade-up">
-    <h2>Plats Principaux</h2>
-    <div class="item" data-aos="fade-up"><span class="title">Kebab Spécial Maison</span> <span class="price">12€</span></div>
-    <div class="item" data-aos="fade-up"><span class="title">Poulet Curry</span> <span class="price">11€</span></div>
-  </div>
+    <div class="section" data-aos="fade-up">
+      <h2>Plats Principaux</h2>
+      <div class="item" data-aos="fade-up"><span class="title">Kebab Spécial Maison</span> <span class="price">12€</span></div>
+      <div class="item" data-aos="fade-up"><span class="title">Poulet Curry</span> <span class="price">11€</span></div>
+    </div>
 
-  <div class="section" data-aos="fade-up">
-    <h2>Desserts</h2>
-    <div class="item" data-aos="fade-up"><span class="title">Baklava</span> <span class="price">4€</span></div>
-    <div class="item" data-aos="fade-up"><span class="title">Tiramisu Maison</span> <span class="price">5€</span></div>
-  </div>
+    <div class="section" data-aos="fade-up">
+      <h2>Desserts</h2>
+      <div class="item" data-aos="fade-up"><span class="title">Baklava</span> <span class="price">4€</span></div>
+      <div class="item" data-aos="fade-up"><span class="title">Tiramisu Maison</span> <span class="price">5€</span></div>
+    </div>
 
-  <div class="section" data-aos="fade-up">
-    <h2>Boissons</h2>
-    <div class="item" data-aos="fade-up"><span class="title">Ayran</span> <span class="price">2€</span></div>
-    <div class="item" data-aos="fade-up"><span class="title">Soda</span> <span class="price">2.5€</span></div>
-  </div>
+    <div class="section" data-aos="fade-up">
+      <h2>Boissons</h2>
+      <div class="item" data-aos="fade-up"><span class="title">Ayran</span> <span class="price">2€</span></div>
+      <div class="item" data-aos="fade-up"><span class="title">Soda</span> <span class="price">2.5€</span></div>
+    </div>
 
-  <div class="call" data-aos="fade-up">
-    <a href="tel:+33123456789">📞 Réserver par téléphone</a>
+    <div class="call" data-aos="fade-up">
+      <a href="tel:+33123456789">📞 Réserver par téléphone</a>
+    </div>
   </div>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
