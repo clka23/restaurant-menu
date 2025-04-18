@@ -25,6 +25,13 @@ header p {
   font-style: italic;
 }
 
+/* Ajout de la classe translation pour Menümüz */
+.translation {
+  font-size: 1.2rem; /* Taille de police légèrement plus petite */
+  text-align: center;
+  margin-top: 10px;
+  opacity: 0.8; /* Légèrement moins opaque que le titre principal */
+}
 main {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.6);
@@ -81,14 +88,6 @@ main {
 
 .call-button:hover {
   background-color: #e64a19;
-}
-
-/* Ajout de la classe translation pour Menümüz */
-.translation {
-  font-size: 1.2rem; /* Taille de police légèrement plus petite */
-  text-align: center;
-  margin-top: 10px;
-  opacity: 0.8; /* Légèrement moins opaque que le titre principal */
 }
 
 /* Responsive */
