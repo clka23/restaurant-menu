@@ -19,13 +19,13 @@ header h1 {
   margin: 0;
 }
 
-/* Ajout de la classe translation pour Menümüz */
-.translation {
-  font-size: 1.2rem; /* Taille de police légèrement plus petite */
-  text-align: center;
-  margin-top: 10px;
-  opacity: 0.8; /* Légèrement moins opaque que le titre principal */
-}
+.sub-title {
+      font-size: 1.8rem; /* un peu plus petit que le titre */
+      text-align: center;
+      margin-top: 10px;
+      font-weight: 300;
+      color: white;
+    }
 
 header p {
   font-size: 1.2em;
