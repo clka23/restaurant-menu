@@ -1,70 +1,118 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu Restaurant</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu du Restaurant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2.5rem;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+    }
+
+    .item {
+      margin-bottom: 20px;
+      padding: 15px 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+
+    .item:hover {
+      transform: scale(1.02);
+    }
+
+    .item .title {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    .item .price {
+      float: right;
+      font-weight: 300;
+    }
+
+    .call {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .call a {
+      color: #fff;
+      background-color: #8e2de2;
+      padding: 15px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .call a:hover {
+      background-color: #5d00a2;
+    }
+  </style>
 </head>
 <body>
+  <h1 data-aos="fade-up">Menu du Restaurant</h1>
 
-  <header>
-    <h1>Nom du Restaurant</h1>
-    <p>Le meilleur des plats pour vous !</p>
-  </header>
+  <div class="section" data-aos="fade-up">
+    <h2>Entrées</h2>
+    <div class="item" data-aos="fade-up"><span class="title">Salade Méditerranéenne</span> <span class="price">6€</span></div>
+    <div class="item" data-aos="fade-up"><span class="title">Soupe du jour</span> <span class="price">5€</span></div>
+  </div>
 
-  <main>
-    <!-- Entrées -->
-    <section class="menu-section" id="entrees">
-      <h2>Entrées</h2>
-      <div class="item">
-        <h3>Salade César</h3>
-        <p>Description de l'entrée. Savoureuse et fraîche !</p>
-        <p class="price">10€</p>
-      </div>
-      <div class="item">
-        <h3>Bruschetta</h3>
-        <p>Description de l'entrée. Simple et délicieux !</p>
-        <p class="price">8€</p>
-      </div>
-    </section>
+  <div class="section" data-aos="fade-up">
+    <h2>Plats Principaux</h2>
+    <div class="item" data-aos="fade-up"><span class="title">Kebab Spécial Maison</span> <span class="price">12€</span></div>
+    <div class="item" data-aos="fade-up"><span class="title">Poulet Curry</span> <span class="price">11€</span></div>
+  </div>
 
-    <!-- Plats -->
-    <section class="menu-section" id="plats">
-      <h2>Plats Principaux</h2>
-      <div class="item">
-        <h3>Filet de Saumon</h3>
-        <p>Description du plat. Un plat léger et savoureux !</p>
-        <p class="price">20€</p>
-      </div>
-      <div class="item">
-        <h3>Boeuf Bourguignon</h3>
-        <p>Description du plat. Un classique raffiné !</p>
-        <p class="price">25€</p>
-      </div>
-    </section>
+  <div class="section" data-aos="fade-up">
+    <h2>Desserts</h2>
+    <div class="item" data-aos="fade-up"><span class="title">Baklava</span> <span class="price">4€</span></div>
+    <div class="item" data-aos="fade-up"><span class="title">Tiramisu Maison</span> <span class="price">5€</span></div>
+  </div>
 
-    <!-- Desserts -->
-    <section class="menu-section" id="desserts">
-      <h2>Desserts</h2>
-      <div class="item">
-        <h3>Tarte au Citron</h3>
-        <p>Description du dessert. Acidulé et sucré !</p>
-        <p class="price">6€</p>
-      </div>
-      <div class="item">
-        <h3>Crème Brûlée</h3>
-        <p>Description du dessert. La perfection en bouche !</p>
-        <p class="price">7€</p>
-      </div>
-    </section>
+  <div class="section" data-aos="fade-up">
+    <h2>Boissons</h2>
+    <div class="item" data-aos="fade-up"><span class="title">Ayran</span> <span class="price">2€</span></div>
+    <div class="item" data-aos="fade-up"><span class="title">Soda</span> <span class="price">2.5€</span></div>
+  </div>
 
-    <!-- Appel -->
-    <div class="call-to-action">
-      <p>Réservez votre table dès maintenant :</p>
-      <a href="tel:+123456789" class="call-button">Appeler</a>
-    </div>
-  </main>
+  <div class="call" data-aos="fade-up">
+    <a href="tel:+33123456789">📞 Réserver par téléphone</a>
+  </div>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 600,
+      easing: 'ease-out',
+      once: true,
+    });
+  </script>
 </body>
 </html>
