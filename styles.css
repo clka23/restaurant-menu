@@ -44,19 +44,24 @@ h1 {
   transform: scale(1.02);
 }
 
-.item .title {
-  font-weight: 600;
-  font-size: 1.2rem;
-  margin-bottom: 10px; /* Espacer le titre du prix */
+.item .title,
+.item .sub-title,
+.item .price {
+  margin: 0; /* Enlève toutes les marges sur ces éléments */
+  padding: 0; /* Enlève les paddings */
 }
 
 .item .price {
   font-weight: 300;
   font-size: 1rem;
-  margin-top: 10px; /* Espacer le prix du reste */
-  display: block; /* Afficher le prix sous le titre */
-  text-align: center; /* Assurer que le prix est centré */
+  color: #ffeb3b;
+  margin-top: 0; /* Enlève tout espacement entre le sous-titre et le prix */
+  margin-bottom: 0; /* Enlève tout espacement supplémentaire sous le prix */
 }
+
+
+
+
 
 .call {
   text-align: center;
