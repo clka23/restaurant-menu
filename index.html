@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu du Restaurant</title>
+  <title>Menu du Restaurant</title>  <!-- Ce <title> est juste pour l'onglet du navigateur -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <p style="font-size: 18px; color: #ccc; margin-top: -10px; text-align: center;">Menümüz</p>
   <style>
     body {
       margin: 0;
@@ -15,105 +14,83 @@
       color: white;
       padding: 30px 20px;
     }
-
-    h1 {
+    h1, h2 {
       text-align: center;
-      margin-bottom: 50px;
-      font-size: 2.5rem;
     }
-
-    .section {
-      margin-bottom: 60px;
-    }
-
-    .section h2 {
-      font-size: 1.8rem;
-      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-      padding-bottom: 10px;
-      margin-bottom: 25px;
-    }
-
-    .item {
-      margin-bottom: 20px;
-      padding: 15px 20px;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: transform 0.2s ease;
-    }
-
-    .item:hover {
-      transform: scale(1.02);
-    }
-
-    .item .title {
-      font-weight: 600;
-      font-size: 1.2rem;
-    }
-
-    .item .price {
-      float: right;
-      font-weight: 300;
-    }
-
-    .call {
+    p.translation {
+      font-size: 18px;
+      color: #ccc;
       text-align: center;
-      margin-top: 60px;
-    }
-
-    .call a {
-      color: #fff;
-      background-color: #8e2de2;
-      padding: 15px 25px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .call a:hover {
-      background-color: #5d00a2;
+      margin-top: -10px; /* un petit espace entre le titre et la traduction */
     }
   </style>
 </head>
+
 <body>
-  <h1 data-aos="fade-up">Menu du Restaurant</h1>
+  <!-- Titre principal "Menu du restaurant" -->
+  <h1>Menu du restaurant</h1>
+  <!-- Traduction "Menümüz" juste en dessous -->
+  <p class="translation">Menümüz</p>
 
-  <div class="section" data-aos="fade-up">
-    <h2>Entrées</h2>
-    <div class="item" data-aos="fade-up"><span class="title">Salade Méditerranéenne</span> <span class="price">6€</span></div>
-    <div class="item" data-aos="fade-up"><span class="title">Soupe du jour</span> <span class="price">5€</span></div>
+  <!-- Section Plats -->
+  <h2>Plats</h2>
+  <!-- Traduction "Ana Yemekler" -->
+  <p class="translation">Ana Yemekler</p>
+
+  <div class="item" data-aos="fade-up">
+    <span class="title">Kebab Spécial Maison</span>
+    <span class="price">12€</span>
   </div>
 
-  <div class="section" data-aos="fade-up">
-    <h2>Plats Principaux</h2>
-    <div class="item" data-aos="fade-up"><span class="title">Kebab Spécial Maison</span> <span class="price">12€</span></div>
-    <div class="item" data-aos="fade-up"><span class="title">Poulet Curry</span> <span class="price">11€</span></div>
+  <div class="item" data-aos="fade-up">
+    <span class="title">Pizza Turque</span>
+    <span class="price">11€</span>
   </div>
 
-  <div class="section" data-aos="fade-up">
-    <h2>Desserts</h2>
-    <div class="item" data-aos="fade-up"><span class="title">Baklava</span> <span class="price">4€</span></div>
-    <div class="item" data-aos="fade-up"><span class="title">Tiramisu Maison</span> <span class="price">5€</span></div>
+  <!-- Section Desserts -->
+  <h2>Desserts</h2>
+  <!-- Traduction "Tatlılar" -->
+  <p class="translation">Tatlılar</p>
+
+  <div class="item" data-aos="fade-up">
+    <span class="title">Baklava</span>
+    <span class="price">5€</span>
   </div>
 
-  <div class="section" data-aos="fade-up">
-    <h2>Boissons</h2>
-    <div class="item" data-aos="fade-up"><span class="title">Ayran</span> <span class="price">2€</span></div>
-    <div class="item" data-aos="fade-up"><span class="title">Soda</span> <span class="price">2.5€</span></div>
+  <div class="item" data-aos="fade-up">
+    <span class="title">Künefe</span>
+    <span class="price">6€</span>
   </div>
 
-  <div class="call" data-aos="fade-up">
-    <a href="tel:+33123456789">📞 Réserver par téléphone</a>
+  <!-- Section Boissons -->
+  <h2>Boissons</h2>
+  <!-- Traduction "İçecekler" -->
+  <p class="translation">İçecekler</p>
+
+  <div class="item" data-aos="fade-up">
+    <span class="title">Thé Turc</span>
+    <span class="price">2€</span>
   </div>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 600,
-      easing: 'ease-out',
-      once: true,
-    });
-  </script>
+  <div class="item" data-aos="fade-up">
+    <span class="title">Jus d'orange</span>
+    <span class="price">3€</span>
+  </div>
+
+  <!-- Section Menu Enfant -->
+  <h2>Menu Enfant</h2>
+  <!-- Traduction "Çocuk Menüsü" -->
+  <p class="translation">Çocuk Menüsü</p>
+
+  <div class="item" data-aos="fade-up">
+    <span class="title">Menu Poulet</span>
+    <span class="price">8€</span>
+  </div>
+
+  <div class="item" data-aos="fade-up">
+    <span class="title">Menu Nuggets</span>
+    <span class="price">7€</span>
+  </div>
+  
 </body>
 </html>
