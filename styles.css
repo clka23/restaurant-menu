@@ -22,7 +22,7 @@ header h1 {
 .sub-title {
       font-size: 1.8rem; /* un peu plus petit que le titre */
       text-align: center;
-      margin-top: 10px;
+      margin-top: 0px;
       font-weight: 300;
       color: white;
     }
