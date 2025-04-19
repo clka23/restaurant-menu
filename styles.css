@@ -91,7 +91,7 @@ h1 {
 
 .call a {
   color: #fff;
-  background-color: #8e2de2;
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 15px 25px;
   border-radius: 25px;
   text-decoration: none;
@@ -100,6 +100,7 @@ h1 {
 }
 
 .call a:hover {
-  background-color: #5d00a2;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
+  
