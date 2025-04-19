@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Notre menu</title>
@@ -8,6 +9,62 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <style>
+    
+    
+    /* Style pour le bouton hamburger */
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* Style du menu */
+.menu {
+  position: fixed;
+  top: 60px; /* Juste sous le bouton */
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  max-width: 200px;
+  list-style-type: none;
+  opacity: 0;
+  transform: translateX(100%); /* Le menu commence à la droite hors de l'écran */
+  transition: transform 0.4s ease, opacity 1s ease; /* Animation de l'apparition */
+}
+
+.menu.active {
+  display: block;
+  opacity: 1; /* Rendre visible */
+  transform: translateX(0); /* Menu glisse dans la vue */
+}
+
+.menu-item {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.menu-item:hover {
+  color: #ffeb3b;
+}
+
+/* Animation pour fermer le menu si on clique en dehors */
+body.modal-open .menu {
+  display: block;
+  opacity: 1;
+}
+
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
@@ -138,6 +195,7 @@
   </style>
 </head>
 <body>
+  
   <div class="container">
     <h1 data-aos="fade-up">Notre Menu</h1>
     <h2 data-aos="fade-up" class="sub-title">Menümüz</h2>
@@ -220,7 +278,7 @@
       <div class="price">6€</div>
     </div>
 
-    <div class="call" data-aos="fade-up">
+    <div class="call">
       <a href="tel:+33123456789">📞 Réserver par téléphone</a>
     </div>
   </div>
@@ -230,8 +288,22 @@
     AOS.init({
       duration: 600,
       easing: 'ease-out',
-      once: true,
+      once: false,
+      offset: 150,
     });
+
   </script>
+  <!-- Hamburger Menu -->
+<button class="hamburger" id="hamburger-btn">&#9776;</button>
+
+<!-- Menu de navigation -->
+<div id="menu" class="menu">
+  <a href="/boissons" class="menu-item">Boissons</a>
+  <a href="/menus-classiques" class="menu-item">Menus Classiques</a>
+  <a href="/sandwichs" class="menu-item">Sandwichs</a>
+  <a href="/plats" class="menu-item">Plats</a>
+</div>
+
+  
 </body>
 </html>
